@@ -3,21 +3,264 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Da Vincci · Próximamente</title>
-<meta name="robots" content="noindex">
-<style>
-  :root { color-scheme: light dark; }
-  html,body { height:100%; margin:0; }
-  body { display:grid; place-items:center; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:#0f1115; color:#e8e8ea; }
-  main { text-align:center; padding:16px; }
-  h1 { font-size: clamp(1.8rem, 5vw, 3rem); margin:0 0 .4rem; letter-spacing:-.02em; }
-  p { margin:0; opacity:.7; }
-</style>
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<title>DaVincci · Tecnología para pasar de la idea a la obra</title>
+<meta name="description" content="DaVincci hace tecnología: herramientas para pasar de la idea a la obra. OASIS es la primera. En la Academia aprendes a construir tu propio equipo de agentes.">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0A0C10">
+<link rel="icon" type="image/svg+xml" href="marca/favicon-32-color.svg">
+<link rel="icon" sizes="48x48" href="marca/favicon.ico">
+<link rel="preload" href="fuentes/ibm-plex-sans-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fuentes/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fuentes.css">
+<link rel="stylesheet" href="agentitos.css">
+<link rel="stylesheet" href="pagina.css">
+<script src="inicio.js"></script>
 </head>
 <body>
-<main>
-  <h1>Da Vincci</h1>
-  <p>Próximamente.</p>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+
+<header class="barra">
+  <div class="cont barra-cont">
+    <a class="barra-marca" href="#inicio"><img src="marca/lockup-color-oscuro.svg" width="97" height="28" alt="DaVincci, inicio"></a>
+    <nav class="barra-nav" aria-label="Secciones">
+      <a href="#oasis">OASIS</a>
+      <a href="#academia">Academy</a>
+      <a href="#proyecto">Proyecto Da Vinci</a>
+    </nav>
+    <details class="menu">
+      <summary aria-label="Menú">
+        <svg class="tres" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg>
+        <svg class="x" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </summary>
+      <nav class="menu-panel" aria-label="Secciones">
+        <a href="#oasis">OASIS</a>
+        <a href="#academia">Academy</a>
+        <a href="#proyecto">Proyecto Da Vinci</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="recorrido" aria-hidden="true"><i></i></div>
+
+<section class="heroe" id="inicio">
+  <span class="nodo n-1" aria-hidden="true"></span>
+  <div class="cont heroe-cont">
+    <span class="agentito heroe-ag ag-t64" data-rol="general" data-animo="reposo" data-mira="puntero" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span>
+    <h1 class="heroe-frase"><span class="heroe-logo" id="logoDespliega"><img class="logo-fijo" src="marca/lockup-v-abierto-color-oscuro.svg" width="186" height="64" alt="DaVincci"><svg viewBox="1.5 0 186 64" role="img" aria-label="DaVincci"><g id="lg-orig"><g transform="translate(0 0) scale(1)"><path d="M9.393 35.372A24.5 24.5 0 1 1 22.553 52.918A2.6 2.6 0 0 1 21.194 49.954A10 10 0 0 0 11.858 37.506A2.6 2.6 0 0 1 9.393 35.372ZM21.9 32.5A4.6 4.6 0 1 0 31.1 32.5A4.6 4.6 0 1 0 21.9 32.5ZM21.776 18.234A1.75 1.75 0 1 0 25.276 18.234A1.75 1.75 0 1 0 21.776 18.234ZM31.048 14.804A2.075 2.075 0 1 0 35.198 14.804A2.075 2.075 0 1 0 31.048 14.804ZM40.469 17.784A2.4 2.4 0 1 0 45.269 17.784A2.4 2.4 0 1 0 40.469 17.784ZM46.182 25.994A2.725 2.725 0 1 0 51.632 25.994A2.725 2.725 0 1 0 46.182 25.994ZM45.798 36.185A3.05 3.05 0 1 0 51.898 36.185A3.05 3.05 0 1 0 45.798 36.185ZM39.34 44.324A3.375 3.375 0 1 0 46.09 44.324A3.375 3.375 0 1 0 39.34 44.324ZM29.235 47.19A3.7 3.7 0 1 0 36.635 47.19A3.7 3.7 0 1 0 29.235 47.19Z" class="k-c" fill-rule="evenodd"/><path d="M21.776 18.234A1.75 1.75 0 1 0 25.276 18.234A1.75 1.75 0 1 0 21.776 18.234Z" class="k-d1" fill-rule="evenodd"/><path d="M31.048 14.804A2.075 2.075 0 1 0 35.198 14.804A2.075 2.075 0 1 0 31.048 14.804Z" class="k-d2" fill-rule="evenodd"/><path d="M40.469 17.784A2.4 2.4 0 1 0 45.269 17.784A2.4 2.4 0 1 0 40.469 17.784Z" class="k-d3" fill-rule="evenodd"/><path d="M46.182 25.994A2.725 2.725 0 1 0 51.632 25.994A2.725 2.725 0 1 0 46.182 25.994Z" class="k-d4" fill-rule="evenodd"/><path d="M45.798 36.185A3.05 3.05 0 1 0 51.898 36.185A3.05 3.05 0 1 0 45.798 36.185Z" class="k-d5" fill-rule="evenodd"/><path d="M39.34 44.324A3.375 3.375 0 1 0 46.09 44.324A3.375 3.375 0 1 0 39.34 44.324Z" class="k-d6" fill-rule="evenodd"/><path d="M29.235 47.19A3.7 3.7 0 1 0 36.635 47.19A3.7 3.7 0 1 0 29.235 47.19Z" class="k-d7" fill-rule="evenodd"/></g><g transform="translate(62 58) rotate(-72)"><path d="M22.8 -2.075L52.8 -1.3A1.3 1.3 0 0 1 52.8 1.3L22.8 2.075ZM12.3 -2.725L21.5 -2.725L21.5 2.725L12.3 2.725Z" class="k-c"/><path d="M0 0C2.4 -0.8 5.6 -3.7 11 -2.725L11 2.725C5.6 3.7 2.4 0.8 0 0Z" class="k-p"/></g><path transform="translate(88 0)" d="M1.82 43.78V43.22L4.76 41.785V22.675L1.82 21.24V20.68H13.09Q17.115 20.68 19.933 22.045Q22.75 23.41 24.238 25.79Q25.725 28.17 25.725 31.18Q25.725 33.91 24.763 36.22Q23.8 38.53 22.068 40.21Q20.335 41.89 17.973 42.835Q15.61 43.78 12.845 43.78ZM11.9 22.605H9.135V41.855H12.425Q15.19 41.855 17.133 40.683Q19.075 39.51 20.108 37.358Q21.14 35.205 21.14 32.265Q21.14 27.855 18.778 25.23Q16.415 22.605 11.9 22.605ZM33.04 44.13Q31.36 44.13 30.188 43.115Q29.015 42.1 29.05 40.245Q29.085 38.425 30.275 37.252Q31.465 36.08 34.685 35.31L37.975 34.505V32.195Q37.975 30.9 37.1 30.078Q36.225 29.255 35 29.255Q33.775 29.255 33.285 29.832Q32.795 30.41 32.795 31.495V32.86L32.62 33H30.52Q29.995 33 29.785 32.79Q29.575 32.58 29.575 31.95Q29.575 30.305 31.675 29.045Q32.795 28.345 33.898 27.942Q35 27.54 36.225 27.54Q37.765 27.54 39.095 27.96Q40.425 28.38 41.23 29.29Q42.035 30.2 42.035 31.74V41.295Q42.525 41.855 43.82 41.855H44.975L45.08 41.96V42.31Q44.66 43.01 43.785 43.57Q42.91 44.13 41.545 44.13Q40.215 44.13 39.393 43.517Q38.57 42.905 38.22 41.855H37.975Q37.065 42.835 35.805 43.483Q34.545 44.13 33.04 44.13ZM32.9 39.37Q32.9 40.49 33.547 41.032Q34.195 41.575 35.35 41.575Q36.015 41.575 36.627 41.435Q37.24 41.295 37.975 40.98V35.835Q35.805 36.255 34.72 36.763Q33.635 37.27 33.268 37.9Q32.9 38.53 32.9 39.37ZM57.785 43.955 48.685 22.535 46.235 21.24V20.68H56.245V21.24L53.305 22.605L59.71 37.69H59.885L66.255 22.535L63.35 21.24V20.68H70.805V21.24L68.81 22.325L59.5 43.955ZM77 23.795Q75.985 23.795 75.32 23.112Q74.655 22.43 74.655 21.415Q74.655 20.4 75.32 19.735Q75.985 19.07 77 19.07Q78.015 19.07 78.698 19.735Q79.38 20.4 79.38 21.415Q79.38 22.43 78.698 23.112Q78.015 23.795 77 23.795ZM72.8 43.78V43.22L75.075 42.1V31.53L72.905 29.85V29.465L78.785 27.54H79.135V42.1L81.27 43.22V43.78ZM84.035 43.78V43.22L86.31 42.1V31.53L84.14 29.955V29.605L89.67 27.54H90.02L90.335 30.13H90.51Q91.805 28.87 93.013 28.205Q94.22 27.54 95.76 27.54Q97.86 27.54 99.208 28.625Q100.555 29.71 100.555 31.775V42.1L102.83 43.22V43.78H94.43V43.22L96.495 42.1V33.28Q96.495 31.95 95.69 31.233Q94.885 30.515 93.59 30.515Q92.785 30.515 91.875 30.795Q90.965 31.075 90.37 31.565V42.1L92.435 43.22V43.78ZM112.77 44.13Q110.53 44.13 108.85 43.185Q107.17 42.24 106.243 40.543Q105.315 38.845 105.315 36.57Q105.315 33.91 106.4 31.88Q107.485 29.85 109.393 28.695Q111.3 27.54 113.785 27.54Q115.325 27.54 116.673 28.012Q118.02 28.485 118.685 29.255Q119.245 29.92 119.245 30.305Q119.245 30.795 118.79 31.145L117.285 32.44H117.04L115.815 30.795Q115.22 29.99 114.555 29.535Q113.89 29.08 112.84 29.08Q111.09 29.08 110.163 30.655Q109.235 32.23 109.235 34.925Q109.235 36.5 109.778 37.847Q110.32 39.195 111.528 40.017Q112.735 40.84 114.73 40.84Q115.71 40.84 116.83 40.56Q117.95 40.28 119.21 39.615H119.315V40.105Q118.475 41.785 116.778 42.958Q115.08 44.13 112.77 44.13ZM129.5 44.13Q127.26 44.13 125.58 43.185Q123.9 42.24 122.972 40.543Q122.045 38.845 122.045 36.57Q122.045 33.91 123.13 31.88Q124.215 29.85 126.123 28.695Q128.03 27.54 130.515 27.54Q132.055 27.54 133.403 28.012Q134.75 28.485 135.415 29.255Q135.975 29.92 135.975 30.305Q135.975 30.795 135.52 31.145L134.015 32.44H133.77L132.545 30.795Q131.95 29.99 131.285 29.535Q130.62 29.08 129.57 29.08Q127.82 29.08 126.893 30.655Q125.965 32.23 125.965 34.925Q125.965 36.5 126.508 37.847Q127.05 39.195 128.257 40.017Q129.465 40.84 131.46 40.84Q132.44 40.84 133.56 40.56Q134.68 40.28 135.94 39.615H136.045V40.105Q135.205 41.785 133.507 42.958Q131.81 44.13 129.5 44.13ZM143.08 23.795Q142.065 23.795 141.4 23.112Q140.735 22.43 140.735 21.415Q140.735 20.4 141.4 19.735Q142.065 19.07 143.08 19.07Q144.095 19.07 144.778 19.735Q145.46 20.4 145.46 21.415Q145.46 22.43 144.778 23.112Q144.095 23.795 143.08 23.795ZM138.88 43.78V43.22L141.155 42.1V31.53L138.985 29.85V29.465L144.865 27.54H145.215V42.1L147.35 43.22V43.78Z" class="k-c"/></g><g id="lg-anim" display="none"><defs><clipPath id="lg-vclip"><rect x="59.7" y="0" width="30" height="64"/></clipPath></defs><g id="lg-pal"><path d="M9.393 35.372A24.5 24.5 0 1 1 22.553 52.918A2.6 2.6 0 0 1 21.194 49.954A10 10 0 0 0 11.858 37.506A2.6 2.6 0 0 1 9.393 35.372ZM21.9 32.5A4.6 4.6 0 1 0 31.1 32.5A4.6 4.6 0 1 0 21.9 32.5ZM21.776 18.234A1.75 1.75 0 1 0 25.276 18.234A1.75 1.75 0 1 0 21.776 18.234ZM31.048 14.804A2.075 2.075 0 1 0 35.198 14.804A2.075 2.075 0 1 0 31.048 14.804ZM40.469 17.784A2.4 2.4 0 1 0 45.269 17.784A2.4 2.4 0 1 0 40.469 17.784ZM46.182 25.994A2.725 2.725 0 1 0 51.632 25.994A2.725 2.725 0 1 0 46.182 25.994ZM45.798 36.185A3.05 3.05 0 1 0 51.898 36.185A3.05 3.05 0 1 0 45.798 36.185ZM39.34 44.324A3.375 3.375 0 1 0 46.09 44.324A3.375 3.375 0 1 0 39.34 44.324ZM29.235 47.19A3.7 3.7 0 1 0 36.635 47.19A3.7 3.7 0 1 0 29.235 47.19Z" class="k-c" fill-rule="evenodd"/><path d="M21.776 18.234A1.75 1.75 0 1 0 25.276 18.234A1.75 1.75 0 1 0 21.776 18.234Z" class="k-d1" fill-rule="evenodd"/><path d="M31.048 14.804A2.075 2.075 0 1 0 35.198 14.804A2.075 2.075 0 1 0 31.048 14.804Z" class="k-d2" fill-rule="evenodd"/><path d="M40.469 17.784A2.4 2.4 0 1 0 45.269 17.784A2.4 2.4 0 1 0 40.469 17.784Z" class="k-d3" fill-rule="evenodd"/><path d="M46.182 25.994A2.725 2.725 0 1 0 51.632 25.994A2.725 2.725 0 1 0 46.182 25.994Z" class="k-d4" fill-rule="evenodd"/><path d="M45.798 36.185A3.05 3.05 0 1 0 51.898 36.185A3.05 3.05 0 1 0 45.798 36.185Z" class="k-d5" fill-rule="evenodd"/><path d="M39.34 44.324A3.375 3.375 0 1 0 46.09 44.324A3.375 3.375 0 1 0 39.34 44.324Z" class="k-d6" fill-rule="evenodd"/><path d="M29.235 47.19A3.7 3.7 0 1 0 36.635 47.19A3.7 3.7 0 1 0 29.235 47.19Z" class="k-d7" fill-rule="evenodd"/></g><g id="lg-letras" transform="translate(33 0)"><path id="lg-a" d="M33.04 44.13Q31.36 44.13 30.188 43.115Q29.015 42.1 29.05 40.245Q29.085 38.425 30.275 37.252Q31.465 36.08 34.685 35.31L37.975 34.505V32.195Q37.975 30.9 37.1 30.078Q36.225 29.255 35 29.255Q33.775 29.255 33.285 29.832Q32.795 30.41 32.795 31.495V32.86L32.62 33H30.52Q29.995 33 29.785 32.79Q29.575 32.58 29.575 31.95Q29.575 30.305 31.675 29.045Q32.795 28.345 33.898 27.942Q35 27.54 36.225 27.54Q37.765 27.54 39.095 27.96Q40.425 28.38 41.23 29.29Q42.035 30.2 42.035 31.74V41.295Q42.525 41.855 43.82 41.855H44.975L45.08 41.96V42.31Q44.66 43.01 43.785 43.57Q42.91 44.13 41.545 44.13Q40.215 44.13 39.393 43.517Q38.57 42.905 38.22 41.855H37.975Q37.065 42.835 35.805 43.483Q34.545 44.13 33.04 44.13ZM32.9 39.37Q32.9 40.49 33.547 41.032Q34.195 41.575 35.35 41.575Q36.015 41.575 36.627 41.435Q37.24 41.295 37.975 40.98V35.835Q35.805 36.255 34.72 36.763Q33.635 37.27 33.268 37.9Q32.9 38.53 32.9 39.37Z" class="k-c"/><path id="lg-V" d="M57.785 43.955 48.685 22.535 46.235 21.24V20.68H56.245V21.24L53.305 22.605L59.71 37.69H59.885L66.255 22.535L63.35 21.24V20.68H70.805V21.24L68.81 22.325L59.5 43.955Z" class="k-c" clip-path="url(#lg-vclip)"/><path id="lg-i1" d="M77 23.795Q75.985 23.795 75.32 23.112Q74.655 22.43 74.655 21.415Q74.655 20.4 75.32 19.735Q75.985 19.07 77 19.07Q78.015 19.07 78.698 19.735Q79.38 20.4 79.38 21.415Q79.38 22.43 78.698 23.112Q78.015 23.795 77 23.795ZM72.8 43.78V43.22L75.075 42.1V31.53L72.905 29.85V29.465L78.785 27.54H79.135V42.1L81.27 43.22V43.78Z" class="k-c"/><path id="lg-n" d="M84.035 43.78V43.22L86.31 42.1V31.53L84.14 29.955V29.605L89.67 27.54H90.02L90.335 30.13H90.51Q91.805 28.87 93.013 28.205Q94.22 27.54 95.76 27.54Q97.86 27.54 99.208 28.625Q100.555 29.71 100.555 31.775V42.1L102.83 43.22V43.78H94.43V43.22L96.495 42.1V33.28Q96.495 31.95 95.69 31.233Q94.885 30.515 93.59 30.515Q92.785 30.515 91.875 30.795Q90.965 31.075 90.37 31.565V42.1L92.435 43.22V43.78Z" class="k-c"/><path id="lg-c1" d="M112.77 44.13Q110.53 44.13 108.85 43.185Q107.17 42.24 106.243 40.543Q105.315 38.845 105.315 36.57Q105.315 33.91 106.4 31.88Q107.485 29.85 109.393 28.695Q111.3 27.54 113.785 27.54Q115.325 27.54 116.673 28.012Q118.02 28.485 118.685 29.255Q119.245 29.92 119.245 30.305Q119.245 30.795 118.79 31.145L117.285 32.44H117.04L115.815 30.795Q115.22 29.99 114.555 29.535Q113.89 29.08 112.84 29.08Q111.09 29.08 110.163 30.655Q109.235 32.23 109.235 34.925Q109.235 36.5 109.778 37.847Q110.32 39.195 111.528 40.017Q112.735 40.84 114.73 40.84Q115.71 40.84 116.83 40.56Q117.95 40.28 119.21 39.615H119.315V40.105Q118.475 41.785 116.778 42.958Q115.08 44.13 112.77 44.13Z" class="k-c"/><path id="lg-c2" d="M129.5 44.13Q127.26 44.13 125.58 43.185Q123.9 42.24 122.972 40.543Q122.045 38.845 122.045 36.57Q122.045 33.91 123.13 31.88Q124.215 29.85 126.123 28.695Q128.03 27.54 130.515 27.54Q132.055 27.54 133.403 28.012Q134.75 28.485 135.415 29.255Q135.975 29.92 135.975 30.305Q135.975 30.795 135.52 31.145L134.015 32.44H133.77L132.545 30.795Q131.95 29.99 131.285 29.535Q130.62 29.08 129.57 29.08Q127.82 29.08 126.893 30.655Q125.965 32.23 125.965 34.925Q125.965 36.5 126.508 37.847Q127.05 39.195 128.257 40.017Q129.465 40.84 131.46 40.84Q132.44 40.84 133.56 40.56Q134.68 40.28 135.94 39.615H136.045V40.105Q135.205 41.785 133.507 42.958Q131.81 44.13 129.5 44.13Z" class="k-c"/><path id="lg-i2" d="M143.08 23.795Q142.065 23.795 141.4 23.112Q140.735 22.43 140.735 21.415Q140.735 20.4 141.4 19.735Q142.065 19.07 143.08 19.07Q144.095 19.07 144.778 19.735Q145.46 20.4 145.46 21.415Q145.46 22.43 144.778 23.112Q144.095 23.795 143.08 23.795ZM138.88 43.78V43.22L141.155 42.1V31.53L138.985 29.85V29.465L144.865 27.54H145.215V42.1L147.35 43.22V43.78Z" class="k-c"/></g><g id="lg-brush" transform="translate(111.5 58) rotate(-72)"><path d="M22.8 -2.075L52.8 -1.3A1.3 1.3 0 0 1 52.8 1.3L22.8 2.075ZM12.3 -2.725L21.5 -2.725L21.5 2.725L12.3 2.725Z" class="k-c"/><path d="M0 0C2.4 -0.8 5.6 -3.7 11 -2.725L11 2.725C5.6 3.7 2.4 0.8 0 0Z" class="k-p"/></g></g></svg></span> <span class="heroe-resto">hace tecnología.</span></h1>
+    <p class="entrada">Herramientas para pasar de la idea a la obra.</p>
+    <p class="acciones">
+      <a class="boton primario" href="#academia">Conocer la Academia</a>
+      <a class="boton secundario" href="#oasis">Ver OASIS</a>
+    </p>
+  </div>
+</section>
+
+<section class="cuaderno" id="oasis" aria-label="Del boceto a la obra">
+  <span class="nodo n-2" aria-hidden="true"></span>
+  <div class="cuaderno-escena">
+    <div class="cont cuaderno-cont">
+      <div class="frases">
+        <p class="frase f-1">Leonardo dejó cuadernos llenos de máquinas que nunca se construyeron.</p>
+        <h2 class="frase f-2">Casi todas las ideas terminan así: en <span class="en-boceto">boceto</span>.</h2>
+        <p class="frase f-3">No por falta de ideas. Por falta de manos.</p>
+        <div class="frase f-4">
+          <svg class="reflejo" viewBox="0 0 16 16" role="img" aria-label="OASIS"><path d="M4.1 6.1C4.1 3.946 5.846 2.2 8 2.2C10.154 2.2 11.9 3.946 11.9 6.1L4.1 6.1Z"/><path opacity=".42" d="M4.3 7.3L12.1 7.3C12.1 10.012 9.126 13.4 3.91 13.93C6.055 11.785 6.466 11.301 5.212 9.807C4.623 9.104 4.3 8.217 4.3 7.3Z"/></svg>
+          <h2>Por eso hicimos OASIS.</h2>
+          <p>Varias inteligencias artificiales trabajando juntas en un mismo lienzo.</p>
+        </div>
+        <div class="frase f-5">
+          <p>Tú diriges.</p>
+          <a class="enlace" href="https://oasis.davincci.tech/">Ver OASIS <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="tablero">
+        <div class="hoja" role="img" aria-label="Una hoja de cuaderno con el boceto del tornillo aéreo de Leonardo. Siete agentes de OASIS, dibujados como bolitas con ojos, toman pintura de la paleta de DaVincci y pintan la máquina pieza por pieza, hasta que despega.">
+          <div class="tinta"><svg class="trazo guias" viewBox="0 0 400 500" aria-hidden="true"><path d="M225 26V432"/><path d="M75 372A150 33 0 1 0 375 372A150 33 0 1 0 75 372"/></svg></div>
+<svg class="nota" viewBox="0 0 400 500" aria-hidden="true"><path d="M363 96V354M358 96h10M358 354h10"/></svg><svg class="nota" viewBox="0 0 400 500" aria-hidden="true"><path d="M105 428H345M105 423v10M345 423v10"/></svg><svg class="nota" viewBox="0 0 400 500" aria-hidden="true"><path d="M40 100l22-22M40 114l36-36M40 128l50-50M54 128l36-36M68 128l22-22"/></svg>
+<div class="sombra"></div>
+<div class="maquina">
+<svg class="pintura pintura-aro" viewBox="0 0 400 500" aria-hidden="true"><path d="M105 372A120 26 0 0 0 345 372L345 390A120 26 0 0 1 105 390Z" fill="var(--lapis)"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M105 372A120 26 0 0 0 345 372L345 390A120 26 0 0 1 105 390Z"/></svg></div>
+<svg class="pintura pintura-tabla" viewBox="0 0 400 500" aria-hidden="true"><path d="M105 372A120 26 0 1 0 345 372A120 26 0 1 0 105 372Z" fill="var(--azurita)"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M105 372A120 26 0 1 0 345 372A120 26 0 1 0 105 372Z"/></svg></div>
+<svg class="pintura pintura-tirantes" viewBox="0 0 400 500" aria-hidden="true"><path d="M125 366L225 286M185 394L225 286M265 394L225 286M325 366L225 286" fill="none" stroke="var(--verdigris)" stroke-width="6" stroke-linecap="round"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M125 366L225 286M185 394L225 286M265 394L225 286M325 366L225 286"/></svg></div>
+<svg class="pintura pintura-atras" viewBox="0 0 400 500" aria-hidden="true"><path d="M225 350L99 350L101.2 342.9L105.8 336L112.8 329.3L122 322.9L133.1 316.9L146 311.4L160.2 306.4L175.6 301.9L191.8 298L208.3 294.7L225 291.9L241.4 289.8L257.2 288.3L272.2 287.3L285.9 286.8L298.2 286.7L308.8 287L317.6 287.7L324.3 288.6L328.9 289.6L331.3 290.8L331.5 292L225 292ZM225 234L138.1 234L139.8 228.3L143.3 222.7L148.3 217.3L154.8 212.2L162.6 207.3L171.6 202.8L181.4 198.6L191.8 194.8L202.8 191.3L213.9 188.3L225 185.7L235.9 183.5L246.2 181.6L256 180.1L264.8 179L272.6 178.1L279.3 177.4L284.7 177L288.7 176.6L291.4 176.4L292.6 176.2L292.4 176L225 176Z" fill="var(--siena)"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M225 350L99 350L101.2 342.9L105.8 336L112.8 329.3L122 322.9L133.1 316.9L146 311.4L160.2 306.4L175.6 301.9L191.8 298L208.3 294.7L225 291.9L241.4 289.8L257.2 288.3L272.2 287.3L285.9 286.8L298.2 286.7L308.8 287L317.6 287.7L324.3 288.6L328.9 289.6L331.3 290.8L331.5 292L225 292ZM225 234L138.1 234L139.8 228.3L143.3 222.7L148.3 217.3L154.8 212.2L162.6 207.3L171.6 202.8L181.4 198.6L191.8 194.8L202.8 191.3L213.9 188.3L225 185.7L235.9 183.5L246.2 181.6L256 180.1L264.8 179L272.6 178.1L279.3 177.4L284.7 177L288.7 176.6L291.4 176.4L292.6 176.2L292.4 176L225 176Z"/></svg></div>
+<svg class="pintura pintura-mastil" viewBox="0 0 400 500" aria-hidden="true"><path d="M221 372V66H229V372ZM229 64L269 77L229 91ZM219 58a6 6 0 1 0 12 0a6 6 0 1 0-12 0Z" fill="var(--sanguina)"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M221 372V66H229V372ZM229 64L269 77L229 91ZM219 58a6 6 0 1 0 12 0a6 6 0 1 0-12 0Z"/></svg></div>
+<svg class="pintura pintura-frente" viewBox="0 0 400 500" aria-hidden="true"><path d="M225 292L331.5 292L329.5 293.1L325.5 294.1L319.4 294.9L311.6 295.4L302.1 295.5L291.2 295.3L279.2 294.6L266.3 293.5L252.7 291.9L238.9 289.8L225 287.2L211.4 284.1L198.3 280.5L185.9 276.5L174.6 272L164.6 267.3L155.9 262.1L148.9 256.8L143.5 251.2L139.9 245.5L138.1 239.8L138.1 234L225 234ZM225 176L292.4 176L290.8 175.7L288 175.4L283.9 174.8L278.7 174.1L272.6 173.1L265.7 171.9L258.1 170.4L250.1 168.6L241.7 166.5L233.3 164.1L225 161.4L216.9 158.4L209.3 155.1L202.2 151.6L195.8 147.8L190.2 143.9L185.5 139.7L181.7 135.5L179 131.2L177.4 126.8L176.7 122.4L177.1 118L225 118Z" fill="var(--ocre)"/></svg><div class="tinta"><svg class="trazo" viewBox="0 0 400 500" aria-hidden="true"><path d="M225 292L331.5 292L329.5 293.1L325.5 294.1L319.4 294.9L311.6 295.4L302.1 295.5L291.2 295.3L279.2 294.6L266.3 293.5L252.7 291.9L238.9 289.8L225 287.2L211.4 284.1L198.3 280.5L185.9 276.5L174.6 272L164.6 267.3L155.9 262.1L148.9 256.8L143.5 251.2L139.9 245.5L138.1 239.8L138.1 234L225 234ZM225 176L292.4 176L290.8 175.7L288 175.4L283.9 174.8L278.7 174.1L272.6 173.1L265.7 171.9L258.1 170.4L250.1 168.6L241.7 166.5L233.3 164.1L225 161.4L216.9 158.4L209.3 155.1L202.2 151.6L195.8 147.8L190.2 143.9L185.5 139.7L181.7 135.5L179 131.2L177.4 126.8L176.7 122.4L177.1 118L225 118Z"/></svg></div>
+</div>
+          <img class="hoja-paleta" src="marca/simbolo-color.svg" alt="">
+          <span class="actor a-0"><span class="agentito ag-t36" data-rol="planificador" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-1"><span class="agentito ag-t36" data-rol="codigo" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-2"><span class="agentito ag-t36" data-rol="investigacion" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-3"><span class="agentito ag-t36" data-rol="verificador" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-4"><span class="agentito ag-t36" data-rol="revision" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-5"><span class="agentito ag-t36" data-rol="lider" data-animo="reposo" aria-hidden="true"><span class="ag-orbita ag-n6"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+<span class="actor a-6"><span class="agentito ag-t36" data-rol="diseno" data-animo="reposo" aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><i class="gota"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ideas" id="mision" aria-label="Misión y visión">
+  <span class="nodo n-3" aria-hidden="true"></span>
+  <div class="cont">
+    <div class="idea">
+      <p class="dato con-nodo">Misión</p>
+      <h2>Hacemos tecnología que se siente como un pincel en la mano.</h2>
+      <p class="entrada">Útil, precisa y bien hecha. Tan natural que deja de notarse, y solo queda la idea.</p>
+    </div>
+    <div class="idea idea-vision">
+      <p class="dato">Visión</p>
+      <h2>Que ninguna idea se quede en <span class="en-boceto se-pinta" data-palabra="boceto">boceto</span>.</h2>
+      <p class="entrada">Ni por falta de herramientas, ni por falta de oportunidades.</p>
+    </div>
+  </div>
+</section>
+
+<section class="paleta" id="paleta" aria-labelledby="t-paleta">
+  <span class="nodo n-4" aria-hidden="true"></span>
+  <div class="cont">
+    <h2 id="t-paleta">OASIS es el primer color.</h2>
+    <p class="entrada">Cada herramienta de DaVincci es un pigmento de la misma paleta. Todavía hay sitio.</p>
+    <ul class="productos">
+      <li>
+        <a class="tarjeta" href="https://oasis.davincci.tech/">
+          <span class="monton m-1" aria-hidden="true"></span>
+          <h3>OASIS</h3>
+          <p>Un pizarrón donde varias inteligencias artificiales trabajan juntas. Tú diriges.</p>
+          <span class="enlace">oasis.davincci.tech <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tarjeta" href="#academia">
+          <span class="monton m-2" aria-hidden="true"></span>
+          <h3>DaVincci Academy</h3>
+          <p>El curso «Tu equipo de agentes»: programas tu propio equipo, capítulo a capítulo.</p>
+          <span class="enlace">Ver el curso <span aria-hidden="true">↓</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tarjeta" href="https://motion.davincci.tech/">
+          <span class="monton m-4" aria-hidden="true"></span>
+          <h3>DaVincci Motion</h3>
+          <p>Tu contenido, visto como lo verá tu audiencia, mientras todavía lo estás haciendo.</p>
+          <span class="enlace">motion.davincci.tech <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tarjeta" href="#proyecto">
+          <span class="monton m-5" aria-hidden="true"></span>
+          <h3>Proyecto Da Vinci</h3>
+          <p>La rama social: jóvenes que llevan sus propios proyectos de la idea a la acción.</p>
+          <span class="enlace">Cómo trabaja <span aria-hidden="true">↓</span></span>
+        </a>
+      </li>
+    </ul>
+    <p class="vacios" aria-hidden="true"><span class="monton m-3"></span><span class="monton m-6"></span><span class="monton m-7"></span></p>
+  </div>
+</section>
+
+<section class="academia" id="academia" aria-labelledby="t-academia">
+  <span class="nodo n-5" aria-hidden="true"></span>
+  <div class="cont academia-cont">
+    <div class="academia-texto">
+      <p class="dato con-nodo">DaVincci Academy</p>
+      <h2 id="t-academia">Dirigir también se aprende.</h2>
+      <p class="entrada">El primer curso se llama «Tu equipo de agentes». Instalas tu terminal, conectas un modelo y, capítulo a capítulo, construyes un equipo de agentes con código tuyo. No hace falta saber programar.</p>
+      <div class="modulo">
+        <h3>Módulo 1: Lanza tu primer agente gratis</h3>
+        <p>Los capítulos 1 a 3 son la muestra abierta del curso. Al terminarlos tienes corriendo al primer miembro de tu equipo: un agente programado por ti.</p>
+        <p class="pronto"><span class="etiqueta">Abre pronto</span> <span class="dato">academy.davincci.tech</span></p>
+      </div>
+      <p class="nota">Los capítulos 4 a 10 serán de pago. Precio: próximamente.</p>
+    </div>
+
+    <ol class="plan" aria-label="Los diez capítulos de «Tu equipo de agentes»">
+      <li class="plan-fase">
+        <h3>Boceto <span class="etiqueta hecho">Gratis</span></h3>
+        <ol>
+          <li>La terminal es tu taller</li>
+          <li>Tu cerebro</li>
+          <li>Tu primer agente: el Lector <span class="equipo" aria-hidden="true"><span class="agentito ag-t24" data-rol="general" data-animo="reposo" data-chico aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span></span></li>
+        </ol>
+      </li>
+      <li class="plan-fase">
+        <h3>Estudio</h3>
+        <ol>
+          <li>Roles y salidas estructuradas</li>
+          <li>Una conexión que no se rompe</li>
+        </ol>
+      </li>
+      <li class="plan-fase">
+        <h3>Taller</h3>
+        <ol>
+          <li>Las manos del equipo</li>
+          <li>La puerta del equipo</li>
+          <li>Un invitado externo</li>
+        </ol>
+      </li>
+      <li class="plan-fase">
+        <h3>Obra</h3>
+        <ol>
+          <li>Tu equipo trabaja junto <span class="equipo" aria-hidden="true"><span class="agentito ag-t24" data-rol="lider" data-animo="reposo" data-chico aria-hidden="true"><span class="ag-orbita ag-n3"><i></i><i></i><i></i></span><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><span class="agentito ag-t24" data-rol="general" data-animo="reposo" data-chico aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><span class="agentito ag-t24" data-rol="redactor" data-animo="reposo" data-chico aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span><span class="agentito ag-t24" data-rol="revision" data-animo="reposo" data-chico aria-hidden="true"><span class="ag-orbe"></span><span class="ag-anillo"></span><span class="ag-cara"><span class="ag-mirada"><span class="ag-ojo"><i class="ag-parpado"></i></span><span class="ag-ojo"><i class="ag-parpado"></i></span></span></span></span></span></li>
+          <li>Tu equipo en producción</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="proyecto" id="proyecto" aria-labelledby="t-proyecto">
+  <span class="nodo n-6" aria-hidden="true"></span>
+  <div class="cont">
+    <p class="dato con-nodo">Proyecto Da Vinci</p>
+    <h2 id="t-proyecto">Pero una herramienta, sola, no cambia nada.</h2>
+    <p class="entrada">Por eso DaVincci tiene una rama social. Nació en una preparatoria de Villahermosa y acompaña a jóvenes a ejecutar sus proyectos.</p>
+    <div class="pasos-trazo" aria-hidden="true"><i></i></div>
+    <ol class="pasos" aria-label="Los cinco pasos de un proyecto">
+      <li>Detectar una necesidad</li>
+      <li>Planear</li>
+      <li>Ejecutar</li>
+      <li>Medir</li>
+      <li>Sostenerlo con aliados</li>
+    </ol>
+  </div>
+</section>
+
+<section class="cierre" aria-labelledby="t-cierre">
+  <span class="nodo n-7" aria-hidden="true"></span>
+  <div class="cont">
+    <h2 id="t-cierre">Nosotros hacemos los pinceles. <span class="firma">Tú pintas.<span class="firma-trazo" aria-hidden="true"><i></i><span class="firma-pincel"><img src="marca/pincel-simbolo-color-oscuro.svg" alt=""></span></span></span></h2>
+    <p class="acciones"><a class="boton primario" href="https://oasis.davincci.tech/">Ver OASIS</a></p>
+  </div>
+</section>
+
 </main>
+
+<footer class="pie">
+  <div class="cont">
+    <div class="pie-marca">
+      <a href="#inicio" aria-label="DaVincci, inicio"><img src="marca/lockup-color-oscuro.svg" alt="DaVincci" width="97" height="28" loading="lazy"></a>
+      <span class="cuerpo-s">Desarrollo de tecnología</span>
+    </div>
+    <nav class="pie-familia" aria-label="La familia DaVincci">
+      <a href="#inicio" aria-current="page">DaVincci</a>
+      <span>Academy</span>
+      <a href="https://oasis.davincci.tech/">OASIS</a>
+      <a href="https://motion.davincci.tech/">Motion</a>
+      <a href="#proyecto">Proyecto Da Vinci</a>
+    </nav>
+    <div class="pie-legal">
+      <p class="micro">© 2026 DaVincci</p>
+    </div>
+  </div>
+</footer>
+
+<script src="agentitos.js"></script>
+<script src="logo-animado.js"></script>
+<script src="pagina.js"></script>
 </body>
 </html>
